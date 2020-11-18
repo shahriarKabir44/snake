@@ -1,6 +1,6 @@
 var a,b;
 var n,k;
-
+alert('Welcome to snake game! If you are on your phone, you can use the "left","right","up" and "down" pads to navigate. If you are on your PC, you can use arrow keys.Enjoy :)' )
 for(n=0;n<20;n++){
     for(k=0;k<20;k++){
         var s='<div class="box" id='+n+'-'+k+'> </div>\n'
