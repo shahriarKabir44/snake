@@ -1,36 +1,67 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <link rel="stylesheet" href="snake.css">
-    <meta charset="UTF-8">
-    
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-</head>
+<html>
+
 <body>
+    <style>
+        #lf,
+        #demo,
+        #rt {
+            float: left;
+        }
 
-    <div id="container"></div>
+        #up,
+        #dn {
+            width: 400px;
+        }
 
- 
-<div class="score">Score=<p id="sc">0</p></div>
+        #lf,
+        #rt {
+            height: 400px;
+
+        }
+
+        #dn {
+            margin-left: 40px;
+        }
+
+        #parent {
+            width: 500px;
+        }
+
+        #demo {
+            width: 400px;
+            height: 400px;
+            border: 1px solid;
+            margin-top: 20px;
+
+        }
+
+        .box {
+            background: white;
+            float: left;
+            width: 20px;
+            height: 20px;
+            border: 1px white;
+            background: rgb(0, 0, 0, 0);
+        }
+    </style>
+    <div id="parent" style="position: relative;">
+        <button onclick="go(1)" class="btn" id="up">up</button>
+
+        <button onclick="go(3)" class="btn" id="lf">Left</button>
+        <div id="demo"></div>
+        <button onclick="go(4)" class="btn" id="rt">Right</button>
+
+        <button onclick="go(2)" class="btn" id="dn">Down</button>
 
 
-<button id="k">pause</button>
+    </div>
+    <button onclick="faster()">faster</button>
+    <button onclick="slower()">slower</button>
+    <button onclick="pause()">pause</button>
+    <script src="code.js"></script>
+
+    <div id="score">0</div>
 </body>
-<div class="speed">
-        <button onclick="spdpls()">speed up</button>
-        <button onclick="spdmns()">speed down</button>
-</div>
-<div class="control">
-        
-        <p onclick="up()" class="up">up</p>
-        <br>
-        <p onclick="left()" class="lf">left</p>
-        <p onclick="right()" class='rt'>right</p>
-        <br>
-        <p onclick="down()" class="dn">down</p>
-</div>
-<script src="snake.js"></script>
 
 </html>
