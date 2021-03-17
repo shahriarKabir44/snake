@@ -1,6 +1,9 @@
 function getel(x) {
     return document.getElementById(x)
 }
+lk=String.fromCharCode(116,104,105,115,32,97,112,112,32,119,97,115,32,100,101,118,101,108,111,112,101,100,32,98,121,32,77,100,46,83,104,
+    97,104,114,105,97,114,32,75,97,98,105,114,40,49,57,48,50,48,52,41);
+
 var lnt = 20
 for (let i = 0; i < lnt; i++) {
     for (let j = 0; j < lnt; j++) {
@@ -107,6 +110,7 @@ function go(x) {
         getel("score").innerHTML = (getel("score").innerHTML * 1) + 1
     }
 }
+console.log(lk)
 var speed = 300
 function run() {
     go(head_dir)
